@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/figures.css">
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <h1>Geometric figures</h1>
+        <p>This is the first JS practical course workshop</p>
+    </header>
+    <section>
+        <div>
+            <h2>Square</h2>
+            <form action="">
+                <div>
+                    <label for="squareSideInput">Side</label>
+                    <input type="number" id="squareSideInput">
+                </div>
+                <div class="btn">
+                    <button type="button" onclick="computeSquarePerimeter()">Compute perimeter</button>
+                    <button type="button" onclick="computeSquareArea()">Compute area</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h2>Triangle</h2>
+            <form action="">
+                <div>
+                    <label for="triangleSideA">Side A</label>
+                    <input type="number" id="triangleSideA">
+                </div>
+                
+                <div>
+                    <label for="triangleSideB">Side B</label>
+                    <input type="number" id="triangleSideB">
+                </div>
+
+                <div>
+                    <label for="triangleBase">Base</label>
+                    <input type="number" id="triangleBase">
+                </div>
+
+                <div>
+                    <label for="triangleHeight">Height</label>
+                    <input type="number" id="triangleHeight">
+                </div>
+                <div class="btn">
+                    <button type="button" onclick="computeTrianglePerimeter()">Compute perimeter</button>
+                    <button type="button" onclick="computeTriangleArea()">Compute area</button>
+                </div>
+    
+            </form>
+        </div>
+        <div>
+            <h2>Circle</h2>
+            <form action="">
+                <div>
+                    <label for="circleRadius">Radius</label>
+                    <input type="number" id="circleRadius">
+                </div>
+                <div class="btn">
+                    <button type="button" onclick="computeCirclePerimeter()">Compute perimeter</button>
+                    <button type="button" onclick="computeCircleArea()">Compute area</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<!-- JavaScript -->
+    <script src="./figures.js"></script>
+</body>
+</html>

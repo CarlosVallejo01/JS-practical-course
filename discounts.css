@@ -1,0 +1,83 @@
+    body{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main-container{
+        display: grid;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 20px;
+    }
+    .sub-container{
+        width: 95vw;
+    }
+    .title{
+        color: #32a852;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .product-input-info{
+        background-color: #fcfeff;
+        display: flex;
+        padding: 8px;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #e1e9ed;
+        margin-bottom: 8px;
+    }
+    .symbol{
+        color: #e1e9ed;
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
+    .product-input-info input{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        background-color: transparent;
+        border: 0;
+        font-size: 0.9rem;
+        color: gray;
+    }
+
+    ::placeholder { 
+        color: rgb(216, 225, 236);
+    }
+
+    .btn{
+        padding: 10px;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 1rem;
+    }
+
+    .primary-btn{
+        background: #32a852;
+        border: none;
+        color: white;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+
+    .secondary-btn{
+        margin-top: 8px;
+        background: none;
+        border-color: #32a852;
+        color: #32a852;
+    }
+
+    @media(min-width: 700px){
+        .sub-container{
+        width: 400px;
+    } 
+  }
+

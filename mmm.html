@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mmm.css">
+</head>
+<body>
+    <div class="main-container">
+        <section class="heading">
+            <h1>Mean, mode and median</h1>
+        </section>
+        <div class="questions">
+            <form action="">
+                <label for="numbers">How many numbers are you going to insert?</label>
+                <input type="number" id="numbers" placeholder="Type number of elements">
+                <input type="button" value="Insert elements" onclick="insertElements()" class="btn primary-btn">
+            </form>
+            <form class="form-elem" action="">
+
+            </form>
+            <button class="btn secondary-btn" onclick="getValues()">
+                Get mean, mode and median
+            </button>
+        </div>
+        <div class="results">
+            <div>
+                <span>Mean: </span>
+                <span id="mean"></span>
+            </div>
+            <div>
+                <span>Median: </span>
+                <span id="median"></span>
+            </div>
+            <div>
+                <span>Mode: </span>
+                <span id="mode"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./mmm.js"></script>
+</body>
+</html>

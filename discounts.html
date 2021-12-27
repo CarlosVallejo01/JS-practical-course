@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentages and discounts</title>
+    <!-- Quick sand font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./discounts.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <header>
+                <h1 class="title">Shopping Discount</h1>
+            </header>
+            <div class="card">
+                <form action="">
+                    <label class="product-input-info" for="price">
+                        <span class="symbol">＄</span>
+                        <input type="number" id="price" placeholder="Amount">
+                    </label>
+                    <label class="product-input-info" for="discount">
+                        <span class="symbol">%</span>
+                        <input type="number" id="discount" placeholder="Discount">
+                    </label>
+                    <label class="product-input-info" for="coupon">
+                        <span class="symbol">+</span>
+                        <input type="text" id="coupon" placeholder="Add a coupon!">
+                    </label>
+                    <input type="button" value="Calculate" class="btn primary-btn" onclick="getDiscount()">
+                    <input type="button" value="Add Coupon" class="btn secondary-btn" onclick="onClickAddCoupon()">
+                </form>
+                <p id="finalPriceResult"></p>
+            </div>
+        </div>
+    </div>    
+    <!-- JavaScript -->
+    <script src="./discounts.js"></script>
+</body>
+</html>
